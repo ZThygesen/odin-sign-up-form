@@ -6,12 +6,14 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
     font-family: "Anek Latin", sans-serif;
     background-color: #e5e7eb;
+    width: 100vw;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
 }
 
 .left {
@@ -46,7 +48,6 @@ body {
     font-size: 80px;
 }
 
-
 #caption {
     position: absolute;
     bottom: 0;
@@ -63,7 +64,6 @@ body {
     justify-content: center;
     flex: 8;
     background-color: #e5e7eb;
-    margin-bottom: 60px;
 }
 
 .hook {
@@ -76,7 +76,7 @@ body {
 }
 
 .hook p {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     margin: 0;
     line-height: 1.1;
@@ -85,15 +85,14 @@ body {
 .form {
     display: flex;
     flex-direction: column;
-    width: 100%;
     background-color: #fff;
     box-shadow: 0 10px 10px -10px rgb(207, 207, 207);
-    padding-left: 40px;
 }
 
 .input-area {
     display: flex;
     width: 80%;
+    padding-left: 40px;
 }
 
 .input-left, .input-right {
